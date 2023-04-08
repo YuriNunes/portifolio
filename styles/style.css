@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Stick+No+Bills&family=VT323&display=swap');
+
+:root{
+    --cor-primaria: #09814A;
+    --cor-secundaria: #DCAA75;
+    --cor-terceiaria: greenyellow;
+    --cor-hover: #3d2d1c;
+    --cor-destaque: #91C499;
+
+    --fonte-titulo: 'Stick No Bills', sans-serif;
+    --fonte-sub: 'Stick No Bills', sans-serif;
+    --fonte-cab: 'VT323', monospace;
+    --fonte-txt: 'VT323', monospace;
+    --fonte-botao: 'Saira Stencil One', cursive;
+    --fonte-foot: 'VT323', monospace;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.destaque_titulo{
+    color: var(--cor-terceiaria);
+}
+
+.destaque_p{
+    color: var(--cor-destaque);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 20%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho__menu__link{
+    font-size: 1.56rem;
+    font-family: var(--fonte-cab);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.container{
+    padding: 8.05% 20%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.container__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container__conteudo__titulo{
+    font-size: 2.06rem;
+    font-family: var(--fonte-titulo);
+}
+
+.container__conteudo__txt{
+    font-size: 1.56rem;
+    font-family: var(--fonte-txt);
+}
+
+.container__links__sub{
+    font-family: var(--fonte-sub)
+}
+
+.container__links{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.container__links__botao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 5px dashed var(--cor-terceiaria);
+    width: 50%;
+    text-align: center;
+    font-size: 1.56rem;
+    padding: 10px 0;
+    color: var(--cor-terceiaria);
+    font-family: var(--fonte-botao);
+    text-decoration: none;
+}
+
+.container__links__botao:hover{
+    background-color: var(--cor-hover);
+    border: 5px solid var(--cor-terceiaria);
+}
+
+.container__imagem{
+    width: 50%;
+}
+
+.rodape{
+    padding: 7px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-foot);
+    font-size: 1.56rem;
+}
+
+@media(max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__conteudo{
+        width: auto;
+    }
+}
